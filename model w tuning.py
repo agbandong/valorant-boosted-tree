@@ -1,6 +1,7 @@
 import pandas as pd
+import pickle
 from xgboost import XGBRegressor
-from sklearn.metrics import mean_squared_error
+#from sklearn.metrics import mean_squared_error
 
 # Load the data
 data = pd.read_excel('VCT_DATASET.xlsx')
@@ -52,7 +53,7 @@ opt.fit(X_train, y_train)
 #Evaluate the model and make predictions
 print(opt.best_estimator_)
 print(opt.best_score_)
-opt.score(X_test.to_numpy(), y_test.to_numpy())
+y_pred = opt.score(X_test.to_numpy(), y_test.to_numpy())
 
 opt.best_estimator_.steps
 from xgboost import plot_importance
@@ -62,3 +63,7 @@ xgboost_model = xgboost_step[1]
 plot_importance(xgboost_model)
 
 print(xgboost_model)
+
+#Save model
+filename = 'model w tuning.sav'
+pickle.dump(xgboost_model, open(filename, 'wb'))
