@@ -33,4 +33,3 @@ Made by Adrian Bandong for the group thesis of Oratrice.
 
 ## Excel files:
 - SignedPlayersDatasetVALORANT.xlsx -> Main Professional Valorant Player Data
-- Signed Players Dataset VALORANT VCT DATASET.xlsx/VCT_DATASET.xlsx/
