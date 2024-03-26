@@ -45,3 +45,10 @@ class LinearLimitedRegression:
         predictions[predictions < self.feature_min] = self.feature_min
         predictions[predictions > self.feature_max] = self.feature_max
         return(predictions)
+#Work in progress
+class LinearwXGBoost:
+    def __init__(self, linearLimitedModel, XGBoostModel, timeStart, timeEnd):
+        self.linearLimitedModel = linearLimitedModel
+        self.XGBoostModel = XGBoostModel
+        self.timeStart = timeStart
+        self.timeEnd = timeEnd
