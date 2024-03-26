@@ -2,12 +2,10 @@
 The code for the prediction ACS Valorant model. 
 Made by Adrian Bandong for the group thesis of Oratrice.
 
-## Parts: 
-player features prediction model
-player ACS model
 
-The player features prediction model predicts the possible features of a player at a given time. 
-This is then fed to the player ACS model to return the ACS based on the features of the player.
+## Parts: 
+- player features prediction model -> The player features prediction model predicts the possible features of a player at a given time. 
+- player ACS model -> This is then fed to the player ACS model to return the ACS based on the features of the player.
 
 ## Models:
 - model no tune new.sav -> ACS model to calculate ACS based on player features using default XGBoost Regressor parameters.
@@ -35,4 +33,3 @@ This is then fed to the player ACS model to return the ACS based on the features
 
 ## Excel files:
 - SignedPlayersDatasetVALORANT.xlsx -> Main Professional Valorant Player Data
-- Signed Players Dataset VALORANT VCT DATASET.xlsx/VCT_DATASET.xlsx/
